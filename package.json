@@ -1,0 +1,20 @@
+{
+  "name": "crocstlc-bench",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "deploy": "npm run deploy --workspace=apps/worker",
+    "db:migrate": "wrangler d1 migrations apply tlc-bench"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "typescript": "^5.3.3",
+    "wrangler": "^3.0.0"
+  }
+}

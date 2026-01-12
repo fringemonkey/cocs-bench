@@ -1,0 +1,12 @@
+name = "crocstlc-bench"
+compatibility_date = "2025-01-01"
+
+pages_build_output_dir = "apps/web/dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "tlc-bench"
+database_id = "REPLACE_ME"
+
+[vars]
+NOTION_DATABASE_ID = ""
